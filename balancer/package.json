@@ -1,0 +1,19 @@
+{
+  "name": "jyt-balancer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "zip": "zip -r $(basename $PWD)-$(date +%Y-%m-%d-%H-%M-%S).zip . -x \"*.git*\" -x \"*node_modules/*\" -x  *.zip*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.5.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "http-proxy": "^1.14.0"
+  }
+}
